@@ -23,5 +23,4 @@ Check if the GitHub configuration is successful.
 
     %mvn release:prepare
     %mvn release:perform
-
-    
+ 
