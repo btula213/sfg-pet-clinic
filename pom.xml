@@ -50,6 +50,7 @@
                 <testFailureIgnore>true</testFailureIgnore>
             </configuration>
         </plugin>
+            <!-- Release Management - SFG - Chapter 49 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
