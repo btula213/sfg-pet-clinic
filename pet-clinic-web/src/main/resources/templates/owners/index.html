@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <!--/*@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner"*/-->
     <title>List of Owners</title>
 </head>
 <body>
-
+<TABLE th:width="800px">
+    <thead>
+    <tr>Id</tr>
+    <tr>First Name</tr>
+    <tr>Last Name</tr>
+    </thead>
+    <tbody>
+    <tr th:each="owner:${owners}">
+        <td th:text="${owner?.id}">1</td>
+        <td th:text="${owner?.firstName}">John</td>
+        <td th:text="${owner?.lastName}">George</td>
+    </tr>
+    </tbody>
+</TABLE>
 </body>
 </html>
